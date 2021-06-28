@@ -1,0 +1,50 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>nsk-velomap</title>
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+		integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+		crossorigin=""/>
+	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+		integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+		crossorigin=""></script>
+	<script src="./jquery-3.6.0.min.js"></script>
+	<script src="./script.js"></script>
+	<style>
+		#mapid {
+			height: 600px;
+			width: 600px;
+		}
+		.route_icon_start {
+			background-color: #6cd762;
+			border: 3px solid #fff;
+			box-sizing: border-box;
+			border-radius: 50%;
+			height: 16px !important;
+			width: 16px !important;
+		}
+		.route_icon_mid {
+			background-color: white;
+			border: 3px solid #6d6d78;
+			box-sizing: border-box;
+			border-radius: 50%;
+			height: 12px !important;
+			width: 12px !important;
+		}
+		.route_icon_end {
+			background-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSJub25lIiBoZWlnaHQ9IjEwIiB2aWV3Qm94PSIwIDAgMTAgMTAiIHdpZHRoPSIxMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSIjNDk0OTUwIj48cGF0aCBkPSJtMCAwaDJ2MmgtMnoiLz48cGF0aCBkPSJtMiAyaDJ2MmgtMnoiLz48cGF0aCBkPSJtNiAyaDJ2MmgtMnoiLz48cGF0aCBkPSJtMiA2aDJ2MmgtMnoiLz48cGF0aCBkPSJtNiA2aDJ2MmgtMnoiLz48cGF0aCBkPSJtMCA0aDJ2MmgtMnoiLz48cGF0aCBkPSJtMCA4aDJ2MmgtMnoiLz48cGF0aCBkPSJtNCAwaDJ2MmgtMnoiLz48cGF0aCBkPSJtOCAwaDJ2MmgtMnoiLz48cGF0aCBkPSJtNCA0aDJ2MmgtMnoiLz48cGF0aCBkPSJtOCA0aDJ2MmgtMnoiLz48cGF0aCBkPSJtNCA4aDJ2MmgtMnoiLz48cGF0aCBkPSJtOCA4aDJ2MmgtMnoiLz48L2c+PHBhdGggZD0ibTIgMGgydjJoLTJ6IiBmaWxsPSIjZmZmIi8+PHBhdGggZD0ibTYgMGgydjJoLTJ6IiBmaWxsPSIjZmZmIi8+PHBhdGggZD0ibTQgMmgydjJoLTJ6IiBmaWxsPSIjZmZmIi8+PHBhdGggZD0ibTggMmgydjJoLTJ6IiBmaWxsPSIjZmZmIi8+PHBhdGggZD0ibTQgNmgydjJoLTJ6IiBmaWxsPSIjZmZmIi8+PHBhdGggZD0ibTggNmgydjJoLTJ6IiBmaWxsPSIjZmZmIi8+PHBhdGggZD0ibTAgMmgydjJoLTJ6IiBmaWxsPSIjZmZmIi8+PHBhdGggZD0ibTAgNmgydjJoLTJ6IiBmaWxsPSIjZmZmIi8+PHBhdGggZD0ibTIgNGgydjJoLTJ6IiBmaWxsPSIjZmZmIi8+PHBhdGggZD0ibTYgNGgydjJoLTJ6IiBmaWxsPSIjZmZmIi8+PHBhdGggZD0ibTIgOGgydjJoLTJ6IiBmaWxsPSIjZmZmIi8+PHBhdGggZD0ibTYgOGgydjJoLTJ6IiBmaWxsPSIjZmZmIi8+PC9zdmc+);
+			border: 3px solid #fff;
+			box-sizing: border-box;
+			border-radius: 50%;
+			height: 16px !important;
+			width: 16px !important;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="mapid"></div>
+</body>
+</html>
